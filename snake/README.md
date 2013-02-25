@@ -1,4 +1,4 @@
-JSnake
+JSnake - Early 2011
 ====
 
 (To be honest I added the "J" in front of snake this very moment, after the project was unmodified for literally years. It made me feel very modern.)
