@@ -13,6 +13,7 @@
 \usepackage{framed}
 \usepackage{tocloft}
 \usepackage{hyperref}
+\usepackage{array}
 
 
 %-----------------------------------------------------------
@@ -61,9 +62,10 @@
 \begin{document}
 
 \begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
-\textbf{\Large Itamar Amith} & \textbf{Mobile: 0402 610969} \\
+\textbf{\Large Itamar Amith} & \textbf{Mobile: +61 402 610 969} \\
 Software Developer & itamaram@gmail.com \\
 Melbourne, VIC & \href{http://www.linkedin.com/in/itamaramith}{http://www.linkedin.com/in/itamaramith}\\
+ & \href{https://github.com/itamaram/}{https://github.com/itamaram/}
 \end{tabular*}
 \\
 
@@ -72,17 +74,8 @@ Melbourne, VIC & \href{http://www.linkedin.com/in/itamaramith}{http://www.linked
 \resheading{Personal Statement}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \begin{center}
-  \parbox{6.762in}{I'm a dedicate and hard working software engineer, specializing in Microsoft technologies. I have a strong background in algorithmics and mathematics, and I'm focusing on both utilizing and honing those skills in my work. I enjoy solving challenging problems especially those requiring optimization, both algorithmically, and in terms of implementation. I tend to code recreationally, usually in order to automate mundane and repetitive tasks, or in order to acquire an unfair advantage in online games.}
+  \parbox{6.762in}{I am a software engineer with a strong academic background in algorithmics and mathematics, who is always up for a new challenge. While finding solutions to problems was my main focus for a long time, I am now shifting my focus to finding elegant solutions, with emphasis on design and architecture, not only functionality. I enjoy spending time in front of a whiteboard just as much as time in front of a keyboard. Most of my coding outside of work is done to automate mundane and repetitive tasks, or in order to acquire unfair advantage in online games. }
   \end{center}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\resheading{Skills}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{itemize}
-\item Advanced: C\#, ASP.NET MVC (Razor), JavaScript (jQuery), XPath, Algorithmics
-\item Intermediate: Java, Python, CSS, HTML5, T-SQL, NHibernate, Git, TortoiseSVN, PowerShell
-\end{itemize}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -90,14 +83,23 @@ Melbourne, VIC & \href{http://www.linkedin.com/in/itamaramith}{http://www.linked
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{itemize}
 \item
-	\ressubheading{Carsales.com}{Melbourne, AU}{Senior Software Engineer}{August 2013 - Current}
+	\ressubheading{Carsales.com (Ryvuss Search)}{Melbourne, AU}{Senior Software Engineer}{August 2013 - Current}
+	
+	Ryvuss is a bespoke faceted search engine, written in house in order to meet Carsales' exact needs. All code contribution to this project must be extremely performant in terms of both resource consumption as well as execution speed, in a highly concurrent environment. Some of my key achievements in this role are:
+	\vspace{-3mm}
 	\begin{itemize}
-		\resitem{Worked on enhancing existing, as well as implementing new features for RyvusIQ, Carsale's internal faceted search engine.}
-		\resitem{Wrote extremely performant code, in terms of both execution time and memory usage.}
-		\resitem{Acted as a liaison between the RyvusIQ team and its internal clients.}
+		\resitem{Designed and implemented a geospatial index, allowing querying for items based on polygon-shaped area constraints, as well as sort by distance from a given point.}
+		\resitem{Completely rewrote the existing solution for range indexes, allowing for better performance when filtering search based on a numerical range.}
+		\resitem{Co-authored an improved query language to be used by the engine.}
+		\resitem{Built a new version of the navigation component from the ground up, which allows constructing complex hierarchical queries in a fully data driven manner.}
+		\resitem{Worked with engineers from other teams, on site, off site and overseas to assist with consumption of Ryvuss as well as assistance with general application architecture and design.}
+		\resitem{Participated in strict code reviews, as both reviewer and reviewee, at all stages of the software life cycle to ensure optimal outcome.}
 	\end{itemize}
 \item
 	\ressubheading{POLi Payments}{Melbourne, AU}{Software Developer}{July 2012 - July 2013}
+	
+	POLi Payments is a online payment gateway which facilitates transactions by automating a transfer through the user's online banking platform. 
+	\vspace{-3mm}
 	\begin{itemize}
 		\resitem{Contributed to a sophisticated inhouse JS library used for imitating client actions used on live sites which were rapidly, and constantly changing.}
 		\resitem{Extended an existing framework for compiling XML documents into JavaScript code and equivalent C\# code.}
@@ -105,29 +107,20 @@ Melbourne, VIC & \href{http://www.linkedin.com/in/itamaramith}{http://www.linked
 		\resitem{Maintained, patched and upgraded a the DB layer of the application, composed of an extensive collection of T-SQL stored procedures.}
 	\end{itemize}
 \item
-	\ressubheading{Investit Ltd}{Auckland, NZ}{.NET Developer}{Oct. 2010 - June 2012}
-	\begin{itemize}
-		\resitem{Took part in developing a highly functional, high volume, transactional finance website.}
-		\resitem{Worked with a large set of technologies, in the fields of programming, databases and web deployment.}
-		\resitem{Developed internal analytics tools drawing from optimized HQL queries and displaying using Google's Chart Tool's web API.}
-	\end{itemize}
-%\item
-%	\ressubheading{Adaxa}{Auckland, NZ}{Web Developer}{Mar. 2012 - June 2012}
-%	\begin{itemize}
-%		\resitem{Worked with Drupal CMS to extend and modify an existing site's appearance.}
-%		\resitem{Wrote and implemented small php snippets.}
-%	\end{itemize}
-%\item 
-%	\ressubheading{Mathematics and Computer Science Departments}{Universitiy of Auckland}{Graduate Teaching Assistant}{Mar. 2008 - Nov. 2009}
-%	\begin{itemize}
-%		\resitem{Marked Assignments}
-%		\resitem{Supervised Tests}
-%		\resitem{Acted as a special assistance exam writer}
-%	\end{itemize}
-\end{itemize}
 
 \vfil \break
 
+	\ressubheading{Investit Ltd}{Auckland, NZ}{Full Stack .NET Developer}{Oct. 2010 - June 2012}
+
+	Investit (NZ) is a highly functional, high volume, transaction finance website, which allowed users to start an auction for their investment capital, and get bids from financial institutions for different terms.
+	\vspace{-3mm}
+	\begin{itemize}
+		\resitem{Build the user registration system from specification, allowing for different type of entities (Personal, joint, trusts etc), each requiring its own complex validation rules}
+		\resitem{Write a configurable module which automatically fills in pdf forms for the users based on their details.}
+		\resitem{Code all the front end Javascript, including the auction page to efficiently poll for new bids as well as auction status and update page accordingly}
+		\resitem{Developed internal analytics tools drawing from optimized HQL queries and displaying using Google's Chart Tool's web API.}
+	\end{itemize}
+\end{itemize}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \resheading{Education}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -168,20 +161,6 @@ Melbourne, VIC & \href{http://www.linkedin.com/in/itamaramith}{http://www.linked
 		\item In 2008 I've presented the contents of my Honours Dissertation's research in the University of Auckland's Science Faculty's poster competition and was awarded a Merit Certificate.
 	\end{itemize}
 \end{itemize}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\resheading{Non-commercial work}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \begin{center}
-  \parbox{6.762in}{A selection of my work is publicly viewable on GitHub on \href{https://github.com/Itamaram/}{https://github.com/Itamaram/}.}
-  \end{center}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\resheading{References}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \begin{center}
-  \parbox{6.762in}{References are available on request.}
-  \end{center}
 
 \vspace*{-16pt}
 \end{document}
