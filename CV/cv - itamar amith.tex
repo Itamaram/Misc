@@ -55,7 +55,7 @@
 \begin{tabular*}{6.5in}{l@{\cftdotfill{\cftsecdotsep}\extracolsep{\fill}}r}
 		\textbf{#1} & #2 \\
 		\textit{#3} & \textit{#4} \\
-\end{tabular*}\vspace{-6pt}}
+\end{tabular*}}
 %-----------------------------------------------------------
 
 \begin{document}
@@ -73,8 +73,8 @@ Melbourne, VIC & \href{http://www.linkedin.com/in/itamaramith}{http://www.linked
 \resheading{Personal Statement}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \begin{center}
-  \parbox{6.762in}{I am an efficient problem solver with a strong academic background, as well as a proven commercial track record in algorithmics and mathematics. I enjoy spending time in front of a whiteboard just as much as in front of a keyboard, predicting problems before they become blockers. \linebreak
-  In my spare time I enjoy developing intelligent agents for online games, listening to live music, and trying to explain to my mom what it is I do for a living.}
+  \parbox{6.762in}{ I am a hands-on problem solver with 10 years of industry experience as well as a strong academic background. I'm particularly adept in translating requirements to high level technical designs, while surfacing business concerns such as scalability, availability, tech debt and potential blockers. \linebreak
+  In my spare time I enjoy developing intelligent autonomous agents for online games, attending live music shows, and trying to explain to my mom what it is I do for a living.}
   \end{center}
 
 
@@ -82,23 +82,52 @@ Melbourne, VIC & \href{http://www.linkedin.com/in/itamaramith}{http://www.linked
 \resheading{Employment History}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{itemize}
-\item
-
-	\ressubheading{PointsBet Australia}{Melbourne, AU}{Solutions Lead}{July 2018 - Current}
+\item[]
+    \ressubheading{Restoke.ai}{Melbourne, AU}{Co-Founder, Head of Development}{June 2019 - June 2020}
+    Restoke.ai is a back-of-the-house management platform for hospitality businesses which assists in streamlining the capturing of operational data. Restoke then provides AI driven insights to optimise the business performance.
+    
+    \begin{itemize}
+        \resitem{Bootstrapped the entire platform in-house with one other developer, using Python and Django deployed on AWS EC2 instances.}
+        \resitem{Gather requirements for MVP as well as future development road map by liasing with prospective (and later current) customers.}
+        \resitem{Communicate with investors and accelerators in order to secure funding.}
+    \end{itemize}
+    
+\item[]
+    \ressubheading{Contract Work}{Melbourne, AU}{Freelance specialist}{March 2020 - Current}
+    Due to the uncertainty introduced by Covid-19 I've decided to generate some cash flow  while Restoke was getting off the ground. While most projects are BAU, I have completed some more notable ones:
+    
+    \begin{itemize}
+        \resitem{\textbf{PointsBet USA} - Due to the team responsible for the statistical modeling working exclusively in Python, and the dev team working only in dotnet, invoking statistical computations from within code flows was cumbersome and was generally avoided. I designed and implemented a generic solution which streamlined the work flow of the stats team, and resulted in their models being deployed as containerised micro-services allowing for seamless interoperability with any other service.}
+        \resitem{\textbf{CultureAmp} - A Microsoft Outlook plugin needed immediate attention as system updates destabilised it on some environment. The plugin is written in dotnet and WPF using the Add-in Express framework. The solution involved creative conditional embedding of components based on the user OS.}
+    \end{itemize}
+    
+\item[]
+    \ressubheading{PointsBet Australia}{Melbourne, AU}{Solutions Architect}{April 2019 - October 2019}
+    
+    In recognition of my achievements in the architecture space, I've been promoted and was given a more hands off role, allowing me to focus my full attention on delivering design artefacts, as well as evaluating new technologies for future and current initiatives, and generating proof of concept projects to allow both for assessing viability, and providing boilerplate code for the engineers.
+    My most impactful projects were:
+    
+    \begin{itemize}
+        \resitem{Compare and contrast options for a unified single sign on solution across physical regions, including a hand rolled bespoke solution and third party providers. Engaging both business stakeholders and engineers, I've provided sample implementation for each candidate, as well as a cost and capabilities analysis.}
+        \resitem{Introduce a multi-cloud strategy, allowing the dev team to leverage the unique offering of different providers, cutting down development time. The first project to use this strategy used Google Firebase storage in in conjuction with an Azure dotnet backend, which saved weeks in implementation of front end synchronisation.}
+    \end{itemize}
+    
+\item[]
+	\ressubheading{PointsBet Australia}{Melbourne, AU}{Solutions Lead}{July 2018 - April 2019}
 	
 	As PointsBet grew, so did my responsiblities, as did the team I was leading. The business problems I needed to implement solutions for became increasingly vague, and my role now included working out requirements as well as coming up with satisfactory business solutions and seeing them through technical implementation.
 	
-\begin{itemize}
-	\resitem{Communicate regularly with producut management as well as stakeholders to transition visions into results, while constantly negotiating over changing scopes, and contested development resources.}
-	\resitem{Use online task management tools to better track and consequently utilise developer's time across teams and projects, this allowed for justifying the hiring of additional heads.}
-	\resitem{Champion the development of a component responsible for the ingestion of an external odds feed into our bet management system. The deployed result was durable, reliable, performant and self-error-correcting.}
-	\resitem{Use a mixed team of contractord and full-time devs to deliver a bespoke data processing pipeline responsible for the generation of all spread markets on the site by deriving existing markets using statistical modeling.}
-\end{itemize}
+    \begin{itemize}
+    	\resitem{Communicate regularly with product management as well as stakeholders to transition visions into results, while constantly negotiating over changing scopes, and contested development resources.}
+    	\resitem{Use online task management tools to better track and consequently utilise developer's time across teams and projects, this allowed for justifying the hiring of additional heads.}
+    	\resitem{Champion the development of a component responsible for the ingestion of an external odds feed into our bet management system. The deployed result was durable, reliable, performant and self-error-correcting.}
+    	\resitem{Use a mixed team of contractors and full-time devs to deliver a bespoke data processing pipeline responsible for the generation of all spread markets on the site by deriving existing markets using statistical modeling.}
+    \end{itemize}
 	
+\item[]
 	\ressubheading{PointsBet Australia}{Melbourne, AU}{Technical Lead}{July 2017 - July 2018}
 	
-	PointsBet is a small sports betting startup with a unique value proposition offering of spread betting to Australian audiences. It is a Microsoft shop through and through and is heavily reliant on Azure's cloud offering.
-	Since I've joined the team, I've was able to accomplish the following:
+	PointsBet is an ambitious sports gaming scale up, with an aggressive international growth strategy. I've joined the company when it had just a handful of engineers, and an off the shelf code base. It is a Microsoft shop through and through and is heavily reliant on Azure's cloud offering. Since I've joined the team, I've was able to accomplish the following:
 	
 	\begin{itemize}
 		\resitem{Experience a wide range of Azure products, both for SaaS, and IaaS (focusing mainly on CosmosDB, ServiceBus, and Function Apps)}
@@ -106,7 +135,10 @@ Melbourne, VIC & \href{http://www.linkedin.com/in/itamaramith}{http://www.linked
 		\resitem{Positively influenced the technical direction of the company through design discussions, and negotiating compromises acceptable to both the business and the dev team in the face of looming deadlines.}
 		\resitem{Adapted quickly to rapidly changing requirements by designing solutions composed of small generic deliverables, ensuring minimal amount of work was lost when projects were modified or rescheduled.}
 	\end{itemize}
-\item
+	
+\vfil \break
+	
+\item[]
 	\ressubheading{Carsales.com}{Melbourne, AU}{Solutions Architect}{September 2015 - May 2017}
 
 	While still actively developing Ryvuss, my expertise is further leveraged to assist other teams in designing and implementing software solutions as well as help improve existing ones. My major achievments while on in thie role are:
@@ -116,7 +148,7 @@ Melbourne, VIC & \href{http://www.linkedin.com/in/itamaramith}{http://www.linked
 		\resitem{Oversaw the integration project with SoloAutos.mx, Carsales' first international acquisition}
 	\end{itemize}
 	
-\item
+\item[]
 	\ressubheading{Carsales.com (Ryvuss Search)}{Melbourne, AU}{Senior Software Engineer}{August 2013 - May 2017}
 	
 	Ryvuss is a bespoke faceted search engine, written in house in order to meet Carsales' exact needs. All code contribution to this project must be extremely performant in terms of both resource consumption as well as execution speed, in a highly concurrent environment. Some of my key achievements in this role are:
@@ -132,7 +164,7 @@ Melbourne, VIC & \href{http://www.linkedin.com/in/itamaramith}{http://www.linked
 		\resitem{Participated in strict code reviews, as both reviewer and reviewee, at all stages of the software life cycle to ensure optimal outcome.}
 	\end{itemize}
 
-\item
+\item[]
 	\ressubheading{POLi Payments}{Melbourne, AU}{Software Developer}{July 2012 - July 2013}
 	
 	POLi Payments is a online payment gateway which facilitates transactions by automating a transfer through the user's online banking platform. 
@@ -142,10 +174,8 @@ Melbourne, VIC & \href{http://www.linkedin.com/in/itamaramith}{http://www.linked
 		\resitem{Upgraded several highly functional websites from asp.net to MVC3, while maintaining full backwards compatibility with existing APIs, as well as adding new features.} 
 		\resitem{Maintained, patched and upgraded a the DB layer of the application, composed of an extensive collection of T-SQL stored procedures.}
 	\end{itemize}
-
-\vfil \break
 	
-\item
+\item[]
 	\ressubheading{Investit Ltd}{Auckland, NZ}{Full Stack .NET Developer}{Oct. 2010 - June 2012}
 
 	Investit (NZ) is a highly functional, high volume, transaction finance website, which allowed users to start an auction for their investment capital, and get bids from financial institutions for different terms.
@@ -161,40 +191,25 @@ Melbourne, VIC & \href{http://www.linkedin.com/in/itamaramith}{http://www.linked
 \resheading{Education}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{itemize}
-\item
+\item[]
 	\ressubheading{University of Auckland}{Auckland, NZ}{MSc in Computer Science}{2009 - 2010}
 	\begin{itemize}
-		\resitem{Advisor: Dr. Michael J. Dinneen}
-		\resitem{Thesis: Minimal membership automata for families of bounded treewidth}
-		\resitem{Graduated with Second Class Honours, Second Division}
+		\resitem[]{Advisor: Dr. Michael J. Dinneen}
+		\resitem[]{Thesis: Minimal membership automata for families of bounded treewidth}
+		\resitem[]{Graduated with Second Class Honours, Second Division}
 	\end{itemize}
 
-\item
+\item[]
 	\ressubheading{University of Auckland}{Auckland, NZ}{BSc (Hons) in Mathematics}{2008 - 2009}
 	\begin{itemize}
-		\resitem{Advisor: Dr. Jamie Sneddon}
-		\resitem{Dissertation: Scoring incomplete tournaments}
-		\resitem{Graduated with Second Class Honours, Second Division}
+		\resitem[]{Advisor: Dr. Jamie Sneddon}
+		\resitem[]{Dissertation: Scoring incomplete tournaments}
+		\resitem[]{Graduated with Second Class Honours, Second Division}
 	\end{itemize}
 
-\item
+\item[]
 	\ressubheading{University of Auckland}{Auckland, NZ}{BSc in Applied Mathematics, Computer Science, and Mathematics}{2005 - 2008}
 
-\end{itemize}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\resheading{Achievements}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{itemize}
-\item Programming Competitions
-	\begin{description}
-		\item{IEEEXtreme} - Every year the IEEE organizes an international programming competition for students. The event gets teams of 3 to solve programming problems for 24 hours straight with the final score being calculated based on speed and correctness. In 2009 me and my teammates were ranked \textbf{2\textsuperscript{nd}} in the world. In 2010 we were ranked \textbf{15\textsuperscript{th}.}
-		\item{ACM} - Similarly to the IEEE, the ACM is organizing localized programming competitions with a similar format, with premade teams of three, given a single computer, and 5 hours to solve as many problems as possible out of a set. Me and my teammates were awarded the silver medal for the Auckland region in 2007, and the bronze medal in 2008.
-	\end{description}
-\item Academic Achievements
-	\begin{description}
-		\item In 2008 I've presented the contents of my Honours Dissertation's research in the University of Auckland's Science Faculty's poster competition and was awarded a Merit Certificate.
-	\end{description}
 \end{itemize}
 
 \end{document}
